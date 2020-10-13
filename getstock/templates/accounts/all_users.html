@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>All users</title>
+  </head>
+  <body>
+    <ul>
+      {% for user in users %}
+        <li>
+          {{user.login}}, {{user.password}}, {{user.email}}, {{user.first_name}}, {{user.last_name}}.
+        </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

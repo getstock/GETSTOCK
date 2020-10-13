@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>All stocks</title>
+  </head>
+  <body>
+    <ul>
+      {% for stock in stocks %}
+        <li>
+          {{stock.stock_name}}, {{stock.buy_cost}}, {{stock.sell_cost}}.
+        </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
